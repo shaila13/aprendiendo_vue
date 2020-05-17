@@ -1,0 +1,209 @@
+body {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    /*FUETNES*/
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+}
+
+
+#header {
+    border: 1px solid black;
+    height: 120px;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    border-top: 3px solid #eb045a; 
+}
+.center {
+    width: 75%;
+    margin: 0px auto;
+}
+.clearfix {
+    clear: both;
+    float: none;
+}
+#logo {
+    width: 30%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+}
+
+#logo img {
+    display: block;
+    float: left;
+    height: 50px;
+    margin-right: -10px;
+    animation-name: girar;
+    animation-duration: 30s;
+}
+/* The animation code */
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+#brand {
+    display: block;
+    margin: 10px;
+    float: left;
+}
+#menu {
+    width: 70%;
+    font-size: 18px;
+    float: right;
+}
+
+#menu ul{
+    line-height: 85px;
+    width: 60%;
+    float: right;
+}
+#menu ul li{
+    list-style: none;
+    height: 46px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#menu a{
+    color: #444444;
+    text-decoration: none;
+    transition: 300ms all;
+}
+#menu a:hover{
+    color:  #f0367a;
+
+}
+#slider{
+   width: 100%;
+   height: 350px;
+   /*line-height: 320px;*/
+   color:white;
+   text-shadow: 0px 0px 5px #444;
+   /*DEGRADADO CSS background: #eb045a; */
+   background: rgba(255,138,198,1);
+   background: -moz-linear-gradient(left, rgba(255,138,198,1) 0%, rgba(254,16,139,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,138,198,1)), color-stop(100%, rgba(254,16,139,1)));
+   background: -webkit-linear-gradient(left, rgba(255,138,198,1) 0%, rgba(254,16,139,1) 100%);
+   background: -o-linear-gradient(left, rgba(255,138,198,1) 0%, rgba(254,16,139,1) 100%);
+   background: -ms-linear-gradient(left, rgba(255,138,198,1) 0%, rgba(254,16,139,1) 100%);
+   background: linear-gradient(to right, rgba(255,138,198,1) 0%, rgba(254,16,139,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8ac6', endColorstr='#fe108b', GradientType=1 );
+}
+#slider h1{
+    padding: 0px;
+    margin-top: 0.2px;
+    padding-top: 130px;
+    text-align: center;
+}
+.btn-white{
+    display: block;
+    background: white;
+    color: rgb(88,88,88);
+    padding: 10px;
+    width: 80px;
+    height: 30px;
+    margin: 0px auto;
+    text-transform: uppercase;
+    text-shadow: none;
+    text-decoration: none;
+    line-height: 35px;
+    box-shadow: 0px 0px 5px #ccc;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+.btn-white:hover{
+    background: #444;
+    color:white;
+}
+#slider.slider-small{
+    height: 150px;
+}
+#slider.slider-small h1{
+    padding: 0px;
+    margin-top: 0.2px;
+    padding-top: 55px;
+}
+
+#content{
+    width: 70%;
+    float: left;
+    min-height: 650px;
+    margin-right: 20px;
+}
+#sidebar{
+    width: 25%;
+    float: left;
+    min-height: 450px;
+}
+
+.sidebar-item{
+    padding: 20px;
+    background: #f7f7f7;
+    margin-top: 30px;
+}
+.sidebar-item h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px;
+    border-bottom: 3px solid #eeeeee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-item .btn{
+    margin: 0px auto;
+    margin-top: 10px;
+}
+.btn{
+    display: block;
+    color: white;
+    background: black;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    max-width: 120px;
+    transition: 300ms all;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success{
+    background: #eb045a;
+}
+.btn-success:hover{
+    background: black;
+}
+input[type="text"]{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    padding: 4px;
+    margin-bottom: 5px;
+    transition: 300ms all;
+}
+input[type="text"]:focus{
+    box-shadow: 0px 0px 5px #cccccc inset;  
+}
+#footer{
+    background: #f7f7f7;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    color: #444444;
+}
+
+#footer p{
+    padding: 0px;
+    margin: 0px;
+}
